@@ -1,24 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <title>Vision AI </title>
-    <meta charset="utf-8">
-    <!-- Import the webpage's stylesheet -->
-    <link rel="stylesheet" href="style.css">
-</head>
-
 <body>
-    <h1>Reconaissance d'objet avec COCO-SSD</h1>
-
+    <h1>Reconnaissance d'objet avec COCO-SSD</h1>
     <p>Patience, le modèle charge</p>
 
     <section id="demos" class="invisible">
-
-        <p>Filmez des gens et des objets, résultat garantie !</p>
-
+        <p>Filmez des gens et des objets, résultat garanti !</p>
+        <div id="cameraSelection">
+            <label for="cameraSelect">Sélectionnez une caméra :</label>
+            <select id="cameraSelect"></select>
+        </div>
         <div id="liveView" class="camView">
-            <button id="webcamButton">Autoriser la caméra</button>
             <video id="webcam" autoplay muted width="640" height="480"></video>
         </div>
     </section>
@@ -28,8 +18,6 @@
     <!-- Load the coco-ssd model to use to recognize things in images -->
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
 
-    <!-- javascript import-->
+    <!-- JavaScript import -->
     <script src="script.js" defer></script>
 </body>
-
-</html>
