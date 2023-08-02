@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reconnaissance d'objet avec COCO-SSD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
 <body>
     <h1>Reconnaissance d'objet avec COCO-SSD</h1>
     <p>Patience, le modèle charge</p>
@@ -13,6 +22,8 @@
         </div>
     </section>
 
+    <button id="webcamButton">Autoriser la caméra</button>
+
     <!-- Import TensorFlow.js library -->
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js" type="text/javascript"></script>
     <!-- Load the coco-ssd model to use to recognize things in images -->
@@ -21,3 +32,4 @@
     <!-- JavaScript import -->
     <script src="script.js" defer></script>
 </body>
+</html>

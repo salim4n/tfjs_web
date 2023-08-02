@@ -30,6 +30,7 @@ async function setupCamera(cameraId) {
 	};
 
 	const video = document.getElementById("webcam");
+	console.log("Element video:", video); // Vérifiez que video est correctement défini
 
 	try {
 		// Fermer la caméra active avant d'en ouvrir une nouvelle
@@ -158,3 +159,5 @@ function predictWebcam() {
 		window.requestAnimationFrame(predictWebcam);
 	});
 }
+
+
